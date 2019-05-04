@@ -49,8 +49,6 @@ public class ListadoTest {
         int expResult = 0;
         int result = instance.agregarUnaPersona(per, n);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -61,8 +59,6 @@ public class ListadoTest {
         System.out.println("muestraNombres");
         Listado instance = null;
         instance.muestraNombres();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
