@@ -43,10 +43,10 @@ public class ListadoTest {
     @Test
     public void testAgregarUnaPersona() {
         System.out.println("agregarUnaPersona");
-        Persona per = null;
+        Persona per = new Persona("Laura", 'F', "39457821");
         int n = 0;
-        Listado instance = null;
-        int expResult = 0;
+        Listado instance = new Listado(5);
+        int expResult = n+1;
         int result = instance.agregarUnaPersona(per, n);
         assertEquals(expResult, result);
     }
@@ -57,8 +57,14 @@ public class ListadoTest {
     @Test
     public void testMuestraNombres() {
         System.out.println("muestraNombres");
-        Listado instance = null;
-        instance.muestraNombres();
+        Listado instance = new Listado(2);
+        Persona per = new Persona("Nombre", 'F', "12345678");
+        instance.agregarUnaPersona(per, 0);
+        instance.agregarUnaPersona(per, 1);
+        
+        for (int i = 0; i < 2; i++) {
+            assertEquals(per, instance.p[i]);
+        }
     }
     
 }
