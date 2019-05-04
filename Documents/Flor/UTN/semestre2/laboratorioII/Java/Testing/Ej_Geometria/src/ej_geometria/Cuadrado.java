@@ -15,6 +15,7 @@ public class Cuadrado extends Figura {
        this.lado = lado;
     }
     
+    @Override
     float calculaArea() {
       float area=0;
         

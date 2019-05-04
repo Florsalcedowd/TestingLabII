@@ -14,7 +14,8 @@ public class Circulo extends Figura {
     public Circulo(float radio) {
        this.radio = radio;
     }
-    
+
+    @Override
     float calculaArea() {
         float area=0;
         
