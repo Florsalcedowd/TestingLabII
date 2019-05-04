@@ -59,8 +59,8 @@ public class ArreglosTest {
     @Test
     public void testMenorDelArreglo() {
         System.out.println("menorDelArreglo");
-        int[] a = {1, 2, 3};
-        int expResult = 1;
+        int[] a = {-99, -99, -99};
+        int expResult = -99;
         int result = instance.menorDelArreglo(a);
         assertEquals(expResult, result);
     }
@@ -71,8 +71,8 @@ public class ArreglosTest {
     @Test
     public void testSumaSoloPares() {
         System.out.println("sumaSoloPares");
-        int[] a = {1, 2, 2};
-        int expResult = 4;
+        int[] a = {2147483644, 9, 2};
+        int expResult = 2147483646;
         int result = instance.sumaSoloPares(a);
         assertEquals(expResult, result);
     }
