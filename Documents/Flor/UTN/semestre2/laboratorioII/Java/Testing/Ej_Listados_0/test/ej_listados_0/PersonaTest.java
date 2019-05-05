@@ -21,25 +21,16 @@ public class PersonaTest {
     public PersonaTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test
-    public void testSomeMethod() {
+    public void testPersona() {
         // TODO review the generated test code and remove the default call to fail.
+        System.out.println("TestPersona");
+        Persona per = new Persona("Bruno",'M',"25689412");
+        assertEquals(per.Nombre, "Bruno");
+        assertEquals(per.sexo, 'M');
+        assertEquals(per.documento,"25689412");
+    
     }
     
 }
