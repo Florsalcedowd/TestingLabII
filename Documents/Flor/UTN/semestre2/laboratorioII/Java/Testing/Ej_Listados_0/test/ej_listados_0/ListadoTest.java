@@ -20,22 +20,6 @@ public class ListadoTest {
     
     public ListadoTest() {
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Test of agregarUnaPersona method, of class Listado.
@@ -57,12 +41,15 @@ public class ListadoTest {
     @Test
     public void testMuestraNombres() {
         System.out.println("muestraNombres");
-        Listado instance = new Listado(2);
-        Persona per = new Persona("Nombre", 'F', "12345678");
+        Listado instance = new Listado(5);
+        Persona per = new Persona("Pedro", 'M', "12345678");
         instance.agregarUnaPersona(per, 0);
         instance.agregarUnaPersona(per, 1);
+        instance.agregarUnaPersona(per, 2);
+        instance.agregarUnaPersona(per, 3);
+        instance.agregarUnaPersona(per, 4);
         
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 5; i++) {
             assertEquals(per, instance.p[i]);
         }
     }
